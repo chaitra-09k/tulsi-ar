@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tulsi Plan5 AR</title>
+
+  <!-- Model Viewer Library -->
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial, sans-serif;
+      background-color: #f5fff5;
+    }
+    h2 {
+      color: #2e7d32;
+    }
+    model-viewer {
+      width: 100%;
+      height: 500px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Tulsi Plant 🌿</h2>
+
+  <!-- AR Model Viewer -->
+  <model-viewer 
+      src="tulsi-ar.glb"
+      ar
+      ar-modes="webxr scene-viewer quick-look"
+      camera-controls
+      auto-rotate
+      shadow-intensity="1"
+      environment-image="neutral">
+  </model-viewer>
+
+  <p>Tap the AR icon on your mobile to view the Tulsi plant in real-world AR.</p>
+
+</body>
+</html>
